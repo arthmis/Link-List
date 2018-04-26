@@ -8,19 +8,19 @@ namespace DoubleLinkedList{
 template <typename T>
 class List{
   public:
-   List(); //completed
-   List(const List &list_to_copy); //completed
-   List &operator=(const List &list_to_copy); //completed
+   List();
+   List(const List &list_to_copy);
+   List &operator=(const List &list_to_copy);
    List(List &&list_to_move);
    List &operator=(List &&list_to_move);
    ~List();
-   void push_back(const T &item); //completed
-   void push_front(const T &item); //completed
+   void push_back(const T &item);
+   void push_front(const T &item);
    void insert(const T &item);
-   const T *find(const T &item) const; //completed
-   bool write(const T &item, const T &new_item); //completed
-   T PopFront(); //completed
-   T PopBack(); //completed
+   const T *find(const T &item) const;
+   bool write(const T &item, const T &new_item);
+   T PopFront();
+   T PopBack(); 
    void Remove(const T &item);
    inline bool isEmpty() const; //completed
    void PrintList() const; //completed
