@@ -16,15 +16,15 @@ class List{
    ~List();
    void push_back(const T &item);
    void push_front(const T &item);
-   void insert(const T &item);
+   void insert(const T &item); 
    const T *find(const T &item) const;
    bool write(const T &item, const T &new_item);
    T PopFront();
-   T PopBack(); 
+   T PopBack();
    void Remove(const T &item);
-   inline bool isEmpty() const; //completed
-   void PrintList() const; //completed
-   void ListSwap(List &list_to_swap); //completed
+   inline bool isEmpty() const;
+   void PrintList() const;
+   void ListSwap(List &list_to_swap);
   private:
    struct node{
      T data;
